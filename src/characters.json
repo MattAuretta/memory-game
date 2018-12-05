@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Pikachu",
+        "image": "/images/Pikachu.png"
+    },
+    {
+        "id": 2,
+        "name": "Charmander",
+        "image": "/images/Charmander.png"
+    },
+    {
+        "id": 3,
+        "name": "Bulbasaur",
+        "image": "/images/Bulbasaur.png"
+    },
+    {
+        "id": 4,
+        "name": "Mewtwo",
+        "image": "/images/Mewtwo.png"
+    },
+    {
+        "id": 5,
+        "name": "Gengar",
+        "image": "/images/Gengar.png"
+    },
+    {
+        "id": 6,
+        "name": "Magikarp",
+        "image": "/images/Magikarp.png"
+    },
+    {
+        "id": 7,
+        "name": "Pidgeotto",
+        "image": "/images/Pidgeotto.png"
+    },
+    {
+        "id": 8,
+        "name": "Arbok",
+        "image": "/images/Arbok.png"
+    },
+    {
+        "id": 9,
+        "name": "Jigglypuff",
+        "image": "/images/Jigglypuff.png"
+    },
+    {
+        "id": 10,
+        "name": "Psyduck",
+        "image": "/images/Psyduck.png"
+    },
+    {
+        "id": 11,
+        "name": "Alakazam",
+        "image": "/images/Alakazam.png"
+    },
+    {
+        "id": 12,
+        "name": "Haunter",
+        "image": "/images/Haunter.png"
+    }
+]
