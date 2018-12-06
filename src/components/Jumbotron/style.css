@@ -1,0 +1,31 @@
+.jumbotron {
+    min-height: 350px;
+    background-color: #010101;
+    background-image: url("/images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 350px;
+    padding-top: 100px;
+    margin-top: 60px;
+    padding-bottom: 0;
+}
+
+h1,
+p {
+    text-align: center;
+    font-weight: bold;
+    color: #FFCB05;
+    text-shadow: 0 0 5px #000, 0 0 10px #3861B0, 0 0 20px #3861B0, 0 0 30px #3861B0, 0 0 40px #3861B0, 0 0 50px #3861B0, 0 0 60px #3861B0;
+    -moz-text-shadow: 0 0 10px #3861B0, 0 0 20px #3861B0, 0 0 30px #3861B0, 0 0 40px #3861B0, 0 0 50px #3861B0;;
+    -webkit-text-shadow: 0 0 10px #3861B0, 0 0 20px #3861B0, 0 0 30px #3861B0, 0 0 40px #3861B0, 0 0 50px #3861B0;;
+}
+
+h1 {
+    margin-top: -1em;
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 6em;
+}

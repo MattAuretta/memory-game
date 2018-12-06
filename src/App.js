@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Wrapper from "./components/Wrapper";
 import NavBar from "./components/NavBar";
+import Jumbotron from "./components/Jumbotron";
 import CharcterCard from "./components/CharacterCard";
 import characters from "./characters.json";
 
@@ -11,12 +12,14 @@ class App extends Component {
     return (
       <Wrapper>
         <NavBar />
-      {characters.map(character => (
-        <CharcterCard
-          name={character.name}
-          image={character.image}
-        ></CharcterCard>
-      ))}
+        <Jumbotron />
+        {characters.map(character => (
+          <CharcterCard
+            key={character.id}
+            name={character.name}
+            image={character.image}
+          ></CharcterCard>
+        ))}
       </Wrapper>
     );
   }

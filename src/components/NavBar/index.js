@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 function NavBar(props) {
-    return <nav className="navbar">
+    return <nav className="navbar fixed-top">
         <ul>
             <li className="brand">
                 Memory Game
