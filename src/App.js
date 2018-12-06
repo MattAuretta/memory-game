@@ -9,17 +9,29 @@ import characters from "./characters.json";
 
 class App extends Component {
   state = {
-    clicked: false
+    clicked: [],
+    score: 0
   }
 
-  handleClick = () => {
-    console.log("test")
+  handleClick = (event) => {
+    this.setState({
+      clicked: [...this.state.clicked, event.target.alt]
+    })
+    if (this.state.clicked.includes(event.target.alt)) {
+      console.log("you lose")
+    } else {
+      this.setState({
+        score: this.state.score + 1
+      })
+    }
   }
 
   render() {
     return (
       <Wrapper>
-        <NavBar />
+        <NavBar
+          score={this.state.score}
+        />
         <Jumbotron />
         {characters.map(character => (
           <CharcterCard
