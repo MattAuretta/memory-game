@@ -8,7 +8,7 @@ function NavBar(props) {
                 Memory Game
             </li>
             <li id="game-message">
-                Click An Image to Begin!
+                {props.gameMessage}
             </li>
             <li id="score">
                 Score: {props.score}
