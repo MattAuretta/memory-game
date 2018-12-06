@@ -8,6 +8,14 @@ import CharcterCard from "./components/CharacterCard";
 import characters from "./characters.json";
 
 class App extends Component {
+  state = {
+    clicked: false
+  }
+
+  handleClick = () => {
+    console.log("test")
+  }
+
   render() {
     return (
       <Wrapper>
@@ -18,6 +26,7 @@ class App extends Component {
             key={character.id}
             name={character.name}
             image={character.image}
+            handleClick={this.handleClick}
           ></CharcterCard>
         ))}
       </Wrapper>

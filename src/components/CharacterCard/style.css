@@ -4,3 +4,7 @@
     margin: 1em;
     background: #eee;
 }
+
+.card:hover {
+    cursor: pointer;
+}
