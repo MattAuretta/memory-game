@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #3861B0;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    display: block;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    width: 33.33%;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFCB05;
+}
