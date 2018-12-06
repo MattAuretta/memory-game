@@ -14,7 +14,8 @@ class App extends Component {
     gameMessage: ""
   }
 
-  componentDidMount(){
+  //Set initial game message
+  componentDidMount() {
     this.setState({
       gameMessage: "Click an image to begin!"
     })
@@ -22,18 +23,30 @@ class App extends Component {
 
   handleClick = (event) => {
     this.setState({
+      //Add the div's alt value to the clicked array
       clicked: [...this.state.clicked, event.target.alt]
     })
+    //If the name is already in the clicked array set score back to 0 and empty clicked array
     if (this.state.clicked.includes(event.target.alt)) {
       this.setState({
         gameMessage: "You guessed incorrectly!",
-        score: 0
+        score: 0,
+        clicked: []
       })
     } else {
+      //If the name is not in the clicked array, add 1 to the current score
       this.setState({
         gameMessage: "You guessed correctly!",
         score: this.state.score + 1
       })
+    }
+    this.shuffleArray(characters);
+  }
+
+  shuffleArray(characters) {
+    for (let i = characters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [characters[i], characters[j]] = [characters[j], characters[i]];
     }
   }
 
