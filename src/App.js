@@ -45,6 +45,7 @@ class App extends Component {
         messageClass: "correct"
       })
     };
+    this.setHighScore();
     this.shuffleArray(characters);
   };
 
@@ -54,6 +55,16 @@ class App extends Component {
       [characters[i], characters[j]] = [characters[j], characters[i]];
     };
   };
+
+  setHighScore(){
+    let newScore = this.state.score;
+    let newHighScore = this.state.highscore
+    if(newHighScore > newScore){
+      this.setState({
+          highscore: newHighScore
+      })
+    }
+  }
 
   render() {
     return (
