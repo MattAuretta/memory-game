@@ -43,12 +43,9 @@ class App extends Component {
         score: this.state.score + 1,
         highscore: Math.max(this.state.score + 1),
         messageClass: "correct"
-      }).then((res) => this.setState({
-        gameMessage: ""
-      }))
+      })
     };
     this.shuffleArray(characters);
-    this.resetMessageClass();
   };
 
   shuffleArray(characters) {
