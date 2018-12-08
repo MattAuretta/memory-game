@@ -7,11 +7,11 @@ function NavBar(props) {
             <li className="brand">
                 Memory Game
             </li>
-            <li id="game-message">
+            <li className={props.messageClass}>
                 {props.gameMessage}
             </li>
             <li id="score">
-                Score: {props.score}
+                Score: {props.score} | High Score: {props.highscore}
             </li>
         </ul>
     </nav>

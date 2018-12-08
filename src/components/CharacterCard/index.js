@@ -4,7 +4,7 @@ import "./style.css"
 const CharcterCard = props => (
 
     <div
-        className="card"
+        className={props.className}
         value={props.id}
         onClick={props.handleClick}
     >
